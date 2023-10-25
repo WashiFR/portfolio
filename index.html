@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----- CSS ----->
+    <link rel="stylesheet" href="./css/style.css">
+    <!----- Animations ----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+
+<!----- Navbar ----->
+<nav class="animate__animated animate__fadeInDown">
+    <h1 data-text="Portfolio"><a href="#">Portfolio</a></h1>
+    <ul>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#social">Réseaux</a></li>
+    </ul>
+</nav>
+
+<!----- Header ----->
+<header id="accueil">
+    <div id="container-left" class="container animate__animated animate__zoomIn animate__delay-1s">
+        <div class="blur"></div>
+        <span class="auto-type"></span>
+        <h2>Salut, je suis <span>Weier</span> Loris</h2>
+        <p>J'ai découvert la programmation en première au lycée après avoir découvert la matière Numérique et Sciences
+            Informatiques (NSI), aujourd'hui encore, je continue sur cette voie étant actuellement en 2ème année de BUT
+            Informatique à l'IUT Nancy Charlemagne.
+        </p>
+        <a href="#competences">En savoir plus</a>
+    </div>
+    <div id="container-right" class="container animate__animated animate__zoomIn animate__delay-1s">
+        <div class="blur"></div>
+        <img class="right-img" src="./img/home_img.svg">
+    </div>
+</header>
+
+<!----- Compétences ----->
+<section id="competences">
+    <h1>Compétences</h1>
+    <div id="competences-container"></div>
+    <h1>Logiciels et autres</h1>
+    <div id="logiciels-container"></div>
+</section>
+
+<!----- Projets ----->
+<section id="projets">
+    <h1>Projets</h1>
+    <p>Voici quelques projets que j'ai réalisé durant mes études ou en dehors.</p>
+    <div id="projets-btn">
+        <button id="all" class="active-btn">Tous</button>
+        <button id="web">Web</button>
+        <button id="jeux">Jeux</button>
+        <button id="python">Python</button>
+    </div>
+    <div id="projets-container"></div>
+</section>
+
+<!----- Réseaux ----->
+<!--<section id="social">-->
+<!--    <h1>Réseaux</h1>-->
+<!--</section>-->
+
+<!----- Footer ----->
+<footer>
+    WEIER Loris - 2023
+</footer>
+
+<!----- Flèche retour haut ----->
+<div id="top-arrow">
+    <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+</div>
+
+<!----- Scripts ------>
+<script src="https://kit.fontawesome.com/84d125ec8a.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script src="./js/auto-type.js"></script>
+<script src="./js/generate-cards.js"></script>
+<script src="./js/projects-card.js"></script>
+</body>
+</html>
