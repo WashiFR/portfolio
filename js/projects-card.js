@@ -69,6 +69,7 @@ function createProjectCard(project) {
     let card = document.createElement("div");
     card.classList.add("card");
     card.setAttribute("data-aos", "fade-up");
+    if (projetsDelay >= 300) projetsDelay = 0;
     card.setAttribute('data-aos-delay', projetsDelay.toString());
     projetsDelay += 100;
 
@@ -121,7 +122,6 @@ window.onload = function () {
                 }
             } else {
                 for (let category in projects) {
-                    projectsDelay = 0;
                     for (let project in projects[category]) {
                         createProjectCard(projects[category][project]);
                     }
