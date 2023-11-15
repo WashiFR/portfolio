@@ -105,6 +105,48 @@ nav ul li a:hover:after{
     width: 100%;
 }
 
+nav .menu{
+    display: none;
+    margin-right: 5%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media screen and (max-width: 1090px){
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: var(--dark);
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav .active{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(50, 50, 50, 0.9);
+    }
+
+    nav h1{
+        margin-left: 5%;
+    }
+
+    nav .menu{
+        display: block;
+    }
+}
+
 /* ######################### Header Accueil ######################### */
 
 header{
@@ -182,6 +224,67 @@ header{
     color: var(--light);
 }
 
+@media screen and (max-width: 1090px){
+    header{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    #container-left{
+        padding: 0 10%;
+        text-align: center;
+    }
+
+    #container-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #container-right .right-img{
+        height: 300px;
+    }
+
+    #container-right .blur{
+        display: none;
+    }
+
+    .blur{
+        top: 50px;
+        left: 300px;
+    }
+
+    .container span{
+        font-size: 3vw;
+    }
+
+    .container h2{
+        font-size: 4vw;
+    }
+
+    .container h2 span{
+        font-size: 4.1vw;
+    }
+
+    .container p{
+        font-size: 2vw;
+    }
+
+    .container a{
+        font-size: 2vw;
+    }
+
+    .container a:hover{
+        box-shadow: inset 200px 0 0 0 var(--blue);
+        color: var(--light);
+    }
+}
+
 /* ######################### Section Compétences ######################### */
 
 section{
@@ -230,6 +333,41 @@ section{
 
 .card img{
     width: 100px;
+}
+
+@media screen and (max-width: 1090px){
+    section{
+        padding-top: 30vh;
+    }
+
+    #competences h1, #projets h1, #social h1{
+        font-size: 5vw;
+    }
+
+    #competences-container, #logiciels-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        margin-top: 5vh;
+        padding-bottom: 20vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card{
+        width: 100px;
+        height: 100px;
+    }
+
+    .card img{
+        width: 50px;
+    }
+
+    .card h3{
+        font-size: 0.7rem;
+    }
 }
 
 /* ######################### Section Projets ######################### */
@@ -307,6 +445,27 @@ section{
     background-size: cover;
 }
 
+@media screen and (max-width: 1090px){
+    #projets > p{
+        font-size: 2vw;
+    }
+
+    #projets-btn button{
+        font-size: 2vw;
+    }
+
+    #projets-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #projets-container .card-image{
+        height: 300px;
+    }
+}
+
 /* ######################### Section Réseaux ######################### */
 
 #social{
@@ -320,7 +479,6 @@ section{
     justify-content: center;
     flex-direction: column;
     padding: 10vh 0;
-    gap: 50px;
 }
 
 #social div p{
@@ -341,6 +499,52 @@ section{
 #social a:hover{
     box-shadow: inset 250px 0 0 0 var(--blue);
     color: var(--light);
+}
+
+#social .social-icons{
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+#social .social-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: var(--blue);
+    border: none;
+}
+
+#social .social-icons a:hover{
+
+}
+
+#social .social-icons a img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 1090px) {
+    #social div p{
+        font-size: 3vw;
+    }
+
+    #social a{
+        font-size: 2vw;
+    }
+
+    #social .social-icons a{
+        width: 50px;
+        height: 50px;
+    }
+
+    #social .social-icons a img{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 /* ######################### Footer ######################### */
