@@ -63,7 +63,8 @@ nav h1:before{
     transition: width 0.3s ease;
 }
 
-nav h1:hover:before{
+nav h1:hover:before,
+nav h1:active:before{
     width: 100%;
     cursor: pointer;
 }
@@ -87,7 +88,8 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover{
+nav ul li a:hover,
+nav ul li a:active{
     color: var(--blue);
 }
 
@@ -101,7 +103,8 @@ nav ul li a:after{
     transition: width 0.3s ease;
 }
 
-nav ul li a:hover:after{
+nav ul li a:hover:after,
+nav ul li a:active:after{
     width: 100%;
 }
 
@@ -144,6 +147,12 @@ nav .menu{
 
     nav .menu{
         display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav h1{
+        font-size: 2.5rem;
     }
 }
 
@@ -219,7 +228,8 @@ header{
     transition: all 0.3s ease;
 }
 
-.container a:hover{
+.container a:hover,
+.container a:active{
     box-shadow: inset 200px 0 0 0 var(--blue);
     color: var(--light);
 }
@@ -279,9 +289,41 @@ header{
         font-size: 2vw;
     }
 
-    .container a:hover{
+    .container a:hover,
+    .container a:active{
         box-shadow: inset 200px 0 0 0 var(--blue);
         color: var(--light);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        padding-top: 5vh;
+        gap: 20px;
+    }
+
+    #container-right .right-img{
+        height: 200px;
+    }
+
+    .container span{
+        font-size: 1.1rem;
+    }
+
+    .container h2{
+        font-size: 1.5rem;
+    }
+
+    .container h2 span{
+        font-size: 1.6rem;
+    }
+
+    .container p{
+        font-size: 0.8rem;
+    }
+
+    .container a{
+        font-size: 0.8rem;
     }
 }
 
@@ -370,6 +412,12 @@ section{
     }
 }
 
+@media screen and (max-width: 500px) {
+    #competences h1, #projets h1, #social h1{
+        font-size: 2rem;
+    }
+}
+
 /* ######################### Section Projets ######################### */
 
 #projets{
@@ -380,12 +428,14 @@ section{
 #projets > p{
     font-size: 1.1rem;
     padding: 50px 0;
+    text-align: center;
 }
 
 #projets-btn{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     gap: 20px;
     padding-bottom: 5vh;
@@ -403,7 +453,8 @@ section{
     cursor: pointer;
 }
 
-#projets-btn button:hover{
+#projets-btn button:hover,
+#projets-btn button:active{
     box-shadow: inset 200px 0 0 0 var(--blue);
     color: var(--light);
 }
@@ -430,7 +481,8 @@ section{
     align-items: start;
 }
 
-#projets-container .card:hover{
+#projets-container .card:hover,
+#projets-container .card:active{
     cursor: pointer;
     outline: var(--light) 2px solid;
 }
@@ -443,6 +495,7 @@ section{
     width: 100%;
     height: 200px;
     background-size: cover;
+    background-position: center;
 }
 
 @media screen and (max-width: 1090px){
@@ -463,6 +516,21 @@ section{
 
     #projets-container .card-image{
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #projets > p{
+        font-size: 0.8rem;
+        padding: 50px;
+    }
+
+    #projets-btn{
+        width: 80%;
+    }
+
+    #projets-btn button{
+        font-size: 0.8rem;
     }
 }
 
@@ -496,7 +564,8 @@ section{
     transition: all 0.3s ease;
 }
 
-#social a:hover{
+#social a:hover,
+#social a:active{
     box-shadow: inset 250px 0 0 0 var(--blue);
     color: var(--light);
 }
@@ -516,10 +585,6 @@ section{
     height: 70px;
     background-color: var(--blue);
     border: none;
-}
-
-#social .social-icons a:hover{
-
 }
 
 #social .social-icons a img{
@@ -545,6 +610,17 @@ section{
         width: 30px;
         height: 30px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    #social div p{
+        font-size: 1rem;
+    }
+
+    #social a{
+        font-size: 0.8rem;
+    }
+
 }
 
 /* ######################### Footer ######################### */
