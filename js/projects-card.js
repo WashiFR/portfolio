@@ -23,6 +23,32 @@ const projects = {
             description: "Un démineur fait en JavaScript.",
             image: "./img/demineur.png",
             url: "https://github.com/WashiFR/demineur"
+        },
+        FightGame: {
+            title: "Fight Game",
+            description: "Un jeu de combat avec des memes d'internet (petit remake de mon projet Python) fait en JavaScript.",
+            image: "./img/fight-game.png",
+            url: "https://github.com/WashiFR/FightGameJS"
+        },
+        Touiteur: {
+            title: "Touiteur",
+            description: "Twitter (en mieux) fait en PHP pour la 2ème année du BUT.",
+            image: "./img/touiteur.png",
+            url: "https://github.com/dylanbaud/touiteur"
+        }
+    },
+    "java": {
+        Zeldiablo: {
+            title: "Zeldiablo",
+            description: "Un jeu de type Donjon fait en JavaFx pour la première année du BUT.",
+            image: "./img/zeldiablo.png",
+            url: "https://github.com/WashiFR/2023_Zeldiablo_weier3u_lemeunie6u_chauvel8u_dietric43u"
+        },
+        Trebbo: {
+            title: "Trebbo",
+            description: "Un todolist comme Trello fait en JavaFx pour la 2ème année du BUT.",
+            image: "./img/trebbo.png",
+            url: "https://github.com/IUTNancyCharlemagne/groupes-sae-s3a_baudson_colson_pedretti_weier"
         }
     },
     "jeux": {
@@ -61,6 +87,7 @@ let projetsContainer = document.getElementById("projets-container");
 
 let buttonAll = document.getElementById("all");
 let buttonWeb = document.getElementById("web");
+let buttonJava = document.getElementById("java");
 let buttonJeux = document.getElementById("jeux");
 let buttonPython = document.getElementById("python");
 let activeBtn = buttonAll;
@@ -108,7 +135,7 @@ window.onload = function () {
         }
     }
 
-    for (let btn of [buttonAll, buttonWeb, buttonJeux, buttonPython]) {
+    for (let btn of [buttonAll, buttonWeb, buttonJava, buttonJeux, buttonPython]) {
         btn.addEventListener("click", function () {
             projetsDelay = 0;
             activeBtn.classList.toggle("active-btn")
