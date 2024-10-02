@@ -1,634 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto&display=swap');
-
-:root{
-    --dark: #18181b;
-    --light-grey: #27272a;
-    --lighter-grey: #808080;
-    --light: #f8f8f8;
-    --blue: dodgerblue;
-}
-
-*{
+body {
+    background-color: #e4ecff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    scroll-behavior: smooth;
 }
 
-body{
-    background: var(--dark);
-}
-
-/* ######################### Scroll Bar ######################### */
-
-::-webkit-scrollbar{
-    width: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background: var(--dark);
-}
-
-::-webkit-scrollbar-thumb{
-    background: var(--blue);
-    border-radius: 10px;
-}
-
-/* ######################### Navbar ######################### */
-
-nav{
+main {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 15vh;
-}
-
-nav h1{
-    font-size: 3.5rem;
-    margin-left: 10%;
-    position: relative;
-}
-
-nav h1:before{
-    content: attr(data-text);
-    position: absolute;
-    width: 0;
-    color: var(--blue);
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: width 0.3s ease;
-}
-
-nav h1:hover:before,
-nav h1:active:before{
     width: 100%;
-    cursor: pointer;
+    height: calc(95vh - 30px);
+    margin-top: 30px;
 }
 
-nav h1 a{
-    text-transform: uppercase;
-    color: var(--blue);
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--blue);
+a {
+    text-decoration: none;
+    color: #2066cc;
 }
 
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
+a:hover {
+    text-decoration: underline;
 }
 
-nav ul li a {
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a:active{
-    color: var(--blue);
-}
-
-nav ul li a:after{
-    content: '';
-    display: block;
-    height: 3px;
-    border-radius: 5px;
-    background: var(--blue);
-    width: 0;
-    transition: width 0.3s ease;
-}
-
-nav ul li a:hover:after,
-nav ul li a:active:after{
+table {
+    border-collapse: collapse;
     width: 100%;
+    margin-bottom: 5px;
+    font-size: larger;
 }
 
-nav .menu{
-    display: none;
-    margin-right: 5%;
-    cursor: pointer;
-    z-index: 100;
+table.sticky {
+    margin-bottom: 0;
 }
 
-@media screen and (max-width: 1090px){
-    nav{
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background-color: var(--dark);
-    }
-
-    nav ul{
-        display: none;
-    }
-
-    nav .active{
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 50px;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(50, 50, 50, 0.9);
-    }
-
-    nav h1{
-        margin-left: 5%;
-    }
-
-    nav .menu{
-        display: block;
-    }
+th, td {
+    border-bottom: 3px solid #c6c6c6;
+    padding: 10px;
 }
 
-@media screen and (max-width: 500px) {
-    nav h1{
-        font-size: 2.5rem;
-    }
+table tr:last-child th,
+table tr:last-child td {
+    border-bottom: none;
 }
 
-/* ######################### Header Accueil ######################### */
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 85vh;
-    width: 100%;
+th {
+    background-color: #dbdbd9;
+    width: 45%;
+    font-weight: normal;
 }
 
-.container{
-    width: 50%;
+td {
+    background-color: white;
+    padding: 0 25px;
 }
 
-#container-left{
-    padding-left: 10%;
+.hidden {
+    display: none !important;
 }
 
-#container-right{
-    padding: 0 10%;
-    position: relative;
-    --animate-delay: 1.5s;
-}
-
-#container-right .blur{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    box-shadow: 0 0 1000px 100px var(--blue);
-    z-index: -100;
-}
-
-.blur{
-    position: absolute;
-    box-shadow: 0 0 1000px 50px var(--blue);
-    z-index: -100;
-}
-
-.container span{
-    color: var(--blue);
-    font-size: 1.5rem;
-}
-
-.container h2{
-    font-size: 2.5rem;
-    padding: 20px 0;
-}
-
-.container h2 span{
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px white;
-}
-
-.container p{
-    font-size: 1rem;
-    padding-bottom: 30px;
-    color: var(--light);
-}
-
-.container a{
-    color: var(--blue);
-    font-size: 1.2rem;
-    font-weight: bold;
-    box-shadow: inset 0 0 0 0 var(--blue);
-    border-radius: 5px;
-    border: var(--blue) 2px solid;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-.container a:hover,
-.container a:active{
-    box-shadow: inset 200px 0 0 0 var(--blue);
-    color: var(--light);
-}
-
-@media screen and (max-width: 1090px){
-    header{
-        flex-direction: column-reverse;
-        height: auto;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    #container-left{
-        padding: 0 10%;
-        text-align: center;
-    }
-
-    #container-right{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-
-    #container-right .right-img{
-        height: 300px;
-    }
-
-    #container-right .blur{
-        display: none;
-    }
-
-    .blur{
-        top: 50px;
-        left: 300px;
-    }
-
-    .container span{
-        font-size: 3vw;
-    }
-
-    .container h2{
-        font-size: 4vw;
-    }
-
-    .container h2 span{
-        font-size: 4.1vw;
-    }
-
-    .container p{
-        font-size: 2vw;
-    }
-
-    .container a{
-        font-size: 2vw;
-    }
-
-    .container a:hover,
-    .container a:active{
-        box-shadow: inset 200px 0 0 0 var(--blue);
-        color: var(--light);
-    }
-}
-
-@media screen and (max-width: 500px) {
-    header{
-        padding-top: 5vh;
-        gap: 20px;
-    }
-
-    #container-right .right-img{
-        height: 200px;
-    }
-
-    .container span{
-        font-size: 1.1rem;
-    }
-
-    .container h2{
-        font-size: 1.5rem;
-    }
-
-    .container h2 span{
-        font-size: 1.6rem;
-    }
-
-    .container p{
-        font-size: 0.8rem;
-    }
-
-    .container a{
-        font-size: 0.8rem;
-    }
-}
-
-/* ######################### Section Compétences ######################### */
-
-section{
+.description {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 10vh;
-}
-
-#competences h1, #projets h1, #social h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-}
-
-#competences h1:after, #projets h1:after, #social h1:after{
-    content: '';
-    display: block;
-    width: 75px;
-    height: 3px;
-    border-radius: 5px;
-    background: var(--blue);
-}
-
-#competences-container, #logiciels-container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    margin-top: 5vh;
-    padding-bottom: 20vh;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    background-color: var(--light-grey);
-    border-radius: 10px;
-}
-
-.card img{
-    width: 100px;
-}
-
-@media screen and (max-width: 1090px){
-    section{
-        padding-top: 30vh;
-    }
-
-    #competences h1, #projets h1, #social h1{
-        font-size: 5vw;
-    }
-
-    #competences-container, #logiciels-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        border-radius: 10px;
-        margin-top: 5vh;
-        padding-bottom: 20vh;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .card{
-        width: 100px;
-        height: 100px;
-    }
-
-    .card img{
-        width: 50px;
-    }
-
-    .card h3{
-        font-size: 0.7rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #competences h1, #projets h1, #social h1{
-        font-size: 2rem;
-    }
-}
-
-/* ######################### Section Projets ######################### */
-
-#projets{
-    background-color: var(--light-grey);
-    padding-bottom: 10vh;
-}
-
-#projets > p{
-    font-size: 1.1rem;
-    padding: 50px 0;
-    text-align: center;
-}
-
-#projets-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-    padding-bottom: 5vh;
-}
-
-#projets-btn button{
-    color: var(--light);
-    background-color: transparent;
-    font-size: 1.2rem;
-    box-shadow: inset 0 0 0 0 var(--blue);
-    border-radius: 5px;
-    border: var(--lighter-grey) 2px solid;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-#projets-btn button:hover,
-#projets-btn button:active{
-    box-shadow: inset 200px 0 0 0 var(--blue);
-    color: var(--light);
-}
-
-#projets-btn .active-btn{
-    border: var(--blue) 2px solid;
-    color: var(--blue);
-}
-
-#projets-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    flex-wrap: wrap;
-    width: 90%;
-}
-
-#projets-container .card{
-    width: 100%;
-    height: 100%;
-    background-color: var(--dark);
-    overflow: hidden;
-    text-align: start;
-    align-items: start;
-}
-
-#projets-container .card:hover,
-#projets-container .card:active{
-    cursor: pointer;
-    outline: var(--light) 2px solid;
-}
-
-#projets-container .card-content{
-    padding: 20px;
-}
-
-#projets-container .card-image{
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-@media screen and (max-width: 1090px){
-    #projets > p{
-        font-size: 2vw;
-    }
-
-    #projets-btn button{
-        font-size: 2vw;
-    }
-
-    #projets-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    #projets-container .card-image{
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #projets > p{
-        font-size: 0.8rem;
-        padding: 50px;
-    }
-
-    #projets-btn{
-        width: 80%;
-    }
-
-    #projets-btn button{
-        font-size: 0.8rem;
-    }
-}
-
-/* ######################### Section Réseaux ######################### */
-
-#social{
-    background-color: var(--light-grey);
-    padding-bottom: 10vh;
-}
-
-#social div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10vh 0;
-}
-
-#social div p{
-    font-size: 1.5rem;
-}
-
-#social a{
-    color: var(--blue);
-    font-size: 1.2rem;
-    font-weight: bold;
-    box-shadow: inset 0 0 0 0 var(--blue);
-    border-radius: 5px;
-    border: var(--blue) 2px solid;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-#social a:hover,
-#social a:active{
-    box-shadow: inset 250px 0 0 0 var(--blue);
-    color: var(--light);
-}
-
-#social .social-icons{
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 100%;
-}
-
-#social .social-icons a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    background-color: var(--blue);
-    border: none;
-}
-
-#social .social-icons a img{
-    width: 50px;
-    height: 50px;
-}
-
-@media screen and (max-width: 1090px) {
-    #social div p{
-        font-size: 3vw;
-    }
-
-    #social a{
-        font-size: 2vw;
-    }
-
-    #social .social-icons a{
-        width: 50px;
-        height: 50px;
-    }
-
-    #social .social-icons a img{
-        width: 30px;
-        height: 30px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #social div p{
-        font-size: 1rem;
-    }
-
-    #social a{
-        font-size: 0.8rem;
-    }
-
-}
-
-/* ######################### Footer ######################### */
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    background-color: var(--dark);
+    gap: 5px;
+    height: 120px;
+    max-height: 120px;
+    max-width: 700px;
+    padding: 20px 70px;
+    font-size: large;
+    background-color: white;
 }
