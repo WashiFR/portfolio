@@ -1,0 +1,31 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-sizing: border-box;
+    width: 700px;
+    max-width: 700px;
+    height: 300px;
+    font-size: larger;
+    background-color: white;
+    border-left: 25px solid #dbdbd9;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    box-shadow: #dbdbd9 0 3px 5px;
+}
+
+.card img {
+    width: 60px;
+}
+
+.content_5_table {
+    margin-top: 5px;
+}

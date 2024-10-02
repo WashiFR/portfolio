@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 5vh;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+footer p {
+    padding-left: 20px;
+    flex-grow: 2;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px 0 15px;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    color: black;
+    font-size: large;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}

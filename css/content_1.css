@@ -1,0 +1,45 @@
+.types {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.type {
+    width: 120px;
+    border-radius: 3px;
+}
+
+.exp_bar {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.exp_bar p {
+    margin: 0;
+}
+
+progress {
+    appearance: none;
+    height: 5px;
+    border-radius: 0;
+    background-color: #646464;
+}
+
+progress::-webkit-progress-value {
+    background-color: dodgerblue;
+}
+
+progress::-moz-progress-bar {
+    background-color: dodgerblue;
+}
+
+.object {
+    display: flex;
+    align-items: center;
+}
+
+.object img {
+    width: 50px;
+    padding-right: 10px;
+}

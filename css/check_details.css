@@ -1,0 +1,28 @@
+.check_details {
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    filter: drop-shadow(-1px -1px 5px #c6c6c6);
+}
+
+.check_details div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px 40px 10px 60px;
+    font-size: larger;
+    font-weight: bold;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.check_details span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

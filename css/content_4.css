@@ -1,0 +1,19 @@
+.content_4 {
+    box-sizing: border-box;
+    width: 700px;
+    max-width: 700px;
+    height: 400px;
+    font-size: larger;
+    background-color: white;
+    border-left: 25px solid #dbdbd9;
+    padding: 30px;
+}
+
+.content_4 span {
+    color: #2066cc;
+}
+
+.content_4 p {
+    margin: 0 0 20px 0;
+    line-height: 1.3;
+}

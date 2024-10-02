@@ -1,0 +1,22 @@
+.custom_type {
+    display: flex;
+    align-items: center;
+    background-color: #58414a;
+    color: white;
+    border-radius: 3px;
+    width: 100px;
+    height: 26px;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.custom_type i {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 13px 0 3px;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
