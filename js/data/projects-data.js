@@ -13,6 +13,9 @@ const categories = {
     ApplicationDesktop : {
         name : 'Application Desktop'
     },
+    ApplicationMixedReality : {
+        name : 'Application de Réalité Mixte'
+    },
     JeuVideo : {
         name : 'Jeu Vidéo'
     },
@@ -45,10 +48,10 @@ const languages = {
         name: 'Python',
         color: '#ffd845'
     },
-    Csharp :
+    Unity :
     {
-        name: 'Csharp',
-        color: '#68217a'
+        name: 'Unity',
+        color: 'black'
     },
     Html :
     {
@@ -59,15 +62,6 @@ const languages = {
 }
 
 export const projects = [
-    {
-        name: 'Tamagotchi',
-        note: '10/10',
-        language: languages.Javascript,
-        nbPeople: '1',
-        link: 'https://github.com/WashiFR/tamagotchi-js',
-        description: 'Un tamagotchi fait en JS pour l\'IUT.',
-        category: categories.ApplicationWeb
-    },
     {
         name: 'Dragon Ball',
         note: '10/10',
@@ -85,6 +79,15 @@ export const projects = [
         link: 'https://github.com/WashiFR/web-portrait',
         description: 'Un site web faisoant notre portrait pour l\'IUT.',
         category: categories.SiteWeb
+    },
+    {
+        name: 'Tamagotchi',
+        note: '10/10',
+        language: languages.Javascript,
+        nbPeople: '1',
+        link: 'https://github.com/WashiFR/tamagotchi-js',
+        description: 'Un tamagotchi fait en JS pour l\'IUT.',
+        category: categories.ApplicationWeb
     },
     {
         name: 'Démineur',
@@ -134,7 +137,7 @@ export const projects = [
     {
         name: 'CubRunner',
         note: '10/10',
-        language: languages.Csharp,
+        language: languages.Unity,
         nbPeople: '1',
         link: 'https://github.com/WashiFR/Unity-runner-game',
         description: 'Un jeu de course infini fait en C# avec Unity. Mon premier jeu.',
@@ -143,11 +146,20 @@ export const projects = [
     {
         name: 'Roguelike',
         note: '10/10',
-        language: languages.Csharp,
+        language: languages.Unity,
         nbPeople: '1',
         link: 'https://github.com/WashiFR/Roguelike-2D',
         description: 'Un jeu de type RogueLike fait en C# avec Unity. (Non terminé car trop ambitieux)',
         category: categories.JeuVideo
+    },
+    {
+        name: 'PolyLens',
+        note: '10/10',
+        language: languages.Unity,
+        nbPeople: '2',
+        link: 'https://github.com/Okiles/PolyLens',
+        description: 'Projet en Réalité Mixte réalisé pour l\'école Polytech Nancy lors de mon stage de 2ème année de BUT.',
+        category: categories.ApplicationMixedReality
     },
     {
         name: 'Projet NSI',

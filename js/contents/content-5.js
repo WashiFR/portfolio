@@ -4,6 +4,7 @@ export let content5 = `
     <div class="cards">
         <div class="card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/></div>
         <div class="card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/></div>
+        <div class="card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"/></div>
         <div class="card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/></div>
         <div class="card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"/></div>
         <div class="card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"/></div>
@@ -31,11 +32,4 @@ export let content5 = `
 <!--    <div class="object_description description">-->
 <!--        -->
 <!--    </div>-->
-<!--    -->
-<!--    <table class="content_5_table">-->
-<!--        <tr>-->
-<!--            <th>Méthode d'Apprentissage</th>-->
-<!--            <td>Lycée / Seul / BUT</td>-->
-<!--        </tr>-->
-<!--    </table>-->
     `;

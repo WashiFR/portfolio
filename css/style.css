@@ -54,6 +54,25 @@ td {
     padding: 0 25px;
 }
 
+progress {
+    appearance: none;
+    height: 5px;
+    border-radius: 0;
+    background-color: #646464;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #646464;
+}
+
+progress::-webkit-progress-value {
+    background-color: dodgerblue;
+}
+
+progress::-moz-progress-bar {
+    background-color: dodgerblue;
+}
+
 .hidden {
     display: none !important;
 }

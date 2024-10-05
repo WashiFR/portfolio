@@ -19,21 +19,6 @@
     margin: 0;
 }
 
-progress {
-    appearance: none;
-    height: 5px;
-    border-radius: 0;
-    background-color: #646464;
-}
-
-progress::-webkit-progress-value {
-    background-color: dodgerblue;
-}
-
-progress::-moz-progress-bar {
-    background-color: dodgerblue;
-}
-
 .object {
     display: flex;
     align-items: center;

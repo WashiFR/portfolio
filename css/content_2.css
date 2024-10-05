@@ -1,5 +1,7 @@
 .content_2 {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     width: 700px;
     max-width: 700px;
     height: 350px;
@@ -8,4 +10,72 @@
     border-left: 25px solid #dbdbd9;
     padding: 30px;
     margin-bottom: 5px;
+    gap: 30px;
+}
+
+.stat{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat p {
+    margin: 0;
+    width: 130px;
+}
+
+.stat progress {
+    width: 70%;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.stat progress::-webkit-progress-bar {
+    border-radius: 3px;
+}
+
+.stat progress::-webkit-progress-value {
+    border-radius: 3px;
+}
+
+.progress_1::-webkit-progress-value {
+    background-color: #21ba45;
+}
+.progress_1::-moz-progress-bar {
+    background-color: #21ba45;
+}
+
+.progress_2::-webkit-progress-value {
+    background-color: #db2929;
+}
+.progress_2::-moz-progress-bar {
+    background-color: #db2929;
+}
+
+.progress_3::-webkit-progress-value {
+    background-color: #00b5ad;
+}
+.progress_3::-moz-progress-bar {
+    background-color: #00b5ad;
+}
+
+.progress_4::-webkit-progress-value {
+    background-color: #f2711c;
+}
+.progress_4::-moz-progress-bar {
+    background-color: #f2711c;
+}
+
+.progress_5::-webkit-progress-value {
+    background-color: #a333c8;
+}
+.progress_5::-moz-progress-bar {
+    background-color: #a333c8;
+}
+
+.progress_6::-webkit-progress-value {
+    background-color: #2185d0;
+}
+.progress_6::-moz-progress-bar {
+    background-color: #2185d0;
 }
