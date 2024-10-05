@@ -77,7 +77,7 @@ export const projects = [
         language: languages.Html,
         nbPeople: '1',
         link: 'https://github.com/WashiFR/web-portrait',
-        description: 'Un site web faisoant notre portrait pour l\'IUT.',
+        description: 'Un site web faisant notre portrait pour l\'IUT.',
         category: categories.SiteWeb
     },
     {
@@ -104,7 +104,7 @@ export const projects = [
         language: languages.Javascript,
         nbPeople: '1',
         link: 'https://github.com/WashiFR/FightGameJS',
-        description: 'Un jeu de combat avec des memes d\'interner (petit remake de mon projet Python) fait en Javascript.',
+        description: 'Un jeu de combat avec des memes d\'internet (petit remake de mon projet Python) fait en Javascript.',
         category: categories.ApplicationWeb
     },
     {
@@ -113,7 +113,7 @@ export const projects = [
         language: languages.Php,
         nbPeople: '4',
         link: 'https://github.com/dylanbaud/touiteur',
-        description: 'Twitter (en mieux) fait en PHP pour la 2ème année du BUT.',
+        description: 'Twitter (en mieux) fait en PHP pour la deuxième année du BUT.',
         category: categories.SiteWeb
     },
     {
@@ -131,7 +131,7 @@ export const projects = [
         language: languages.Java,
         nbPeople: '4',
         link: 'https://github.com/IUTNancyCharlemagne/groupes-sae-s3a_baudson_colson_pedretti_weier',
-        description: 'Un todolist comme Trello fait en JavaFx pour la 2ème année du BUT.',
+        description: 'Un todolist comme Trello fait en JavaFx pour la deuxième année du BUT.',
         category: categories.ApplicationDesktop
     },
     {
@@ -158,7 +158,7 @@ export const projects = [
         language: languages.Unity,
         nbPeople: '2',
         link: 'https://github.com/Okiles/PolyLens',
-        description: 'Projet en Réalité Mixte réalisé pour l\'école Polytech Nancy lors de mon stage de 2ème année de BUT.',
+        description: 'Projet en Réalité Mixte réalisé pour l\'école Polytech Nancy lors de mon stage de deuxième année de BUT.',
         category: categories.ApplicationMixedReality
     },
     {
