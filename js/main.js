@@ -3,6 +3,7 @@
 import {detailsMode} from "./details-mode.js";
 import {navIndex, previousContent, nextContent, changeContent} from "./change-content.js";
 import {resetProjectIndex, enableProjectDetailsMode, disableProjectDetailsMode, previousProject, nextProject} from "./projects.js";
+import {contentsData} from "./data/contents-data.js";
 
 window.onload = function() {
     changeContent(navIndex);
@@ -23,7 +24,7 @@ document.addEventListener('keydown', function(event) {
 });
 
 document.addEventListener('keyup', function(event) {
-    if (event.key === 'a' || event.key === 'Enter' || event.key === ' ') {
+    if ((event.key === 'a' || event.key === 'Enter' || event.key === ' ') && contentsData[navIndex - 1].check_details) {
         enableProjectDetailsMode();
     } else if (event.key === 'b' || event.key === 'Escape') {
         disableProjectDetailsMode();
