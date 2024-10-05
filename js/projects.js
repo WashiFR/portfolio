@@ -62,9 +62,13 @@ function removeProjectActive(index) {
     projectsDiv.children[index].children[0].classList.add('hidden');
 }
 
-function scrollToProject() {
+function scrollToProject(bool) {
     let projectsDiv = document.getElementById('projects');
-    projectsDiv.children[projectIndex].scrollIntoView();
+    if (bool && projectIndex > 0) {
+        projectsDiv.children[projectIndex - 1].scrollIntoView(bool);
+    } else if (!bool && projectIndex < projects.length - 1) {
+        projectsDiv.children[projectIndex + 1].scrollIntoView(bool);
+    }
 }
 
 export function nextProject() {
@@ -77,7 +81,7 @@ export function nextProject() {
     if (projectIndex > 0) {
         removeProjectActive(projectIndex - 1);
     }
-    scrollToProject();
+    scrollToProject(false);
     addProjectActive(projectIndex);
     createProjectInfo(projects[projectIndex]);
 }
@@ -92,7 +96,7 @@ export function previousProject() {
     if (projectIndex < projects.length - 1) {
         removeProjectActive(projectIndex + 1);
     }
-    scrollToProject();
+    scrollToProject(true);
     addProjectActive(projectIndex);
     createProjectInfo(projects[projectIndex]);
 }
