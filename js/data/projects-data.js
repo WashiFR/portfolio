@@ -1,65 +1,7 @@
 'use strict';
 
-const categories = {
-    SiteWeb : {
-        name : 'Site Web'
-    },
-    ApplicationWeb : {
-        name : 'Application Web'
-    },
-    ApplicationMobile : {
-        name : 'Application Mobile'
-    },
-    ApplicationDesktop : {
-        name : 'Application Desktop'
-    },
-    ApplicationMixedReality : {
-        name : 'Application de Réalité Mixte'
-    },
-    JeuVideo : {
-        name : 'Jeu Vidéo'
-    },
-    Bot : {
-        name : 'Bot'
-    },
-    Autre : {
-        name : 'Autre'
-    }
-}
-
-const languages = {
-    Java : {
-        name: 'Java',
-        color: 'red'
-    },
-    Php :
-    {
-        name: 'Php',
-        color: '#777bb3'
-    },
-    Javascript :
-    {
-        name: 'Javascript',
-        shortName: 'JS',
-        color: '#f7df1e'
-    },
-    Python :
-    {
-        name: 'Python',
-        color: '#ffd845'
-    },
-    Unity :
-    {
-        name: 'Unity',
-        color: 'black'
-    },
-    Html :
-    {
-        name: 'Html5',
-        shortName: 'Html',
-        color: 'red'
-    },
-}
+import {categories} from "./categories-data.js";
+import {languages} from "./languages-data.js";
 
 export const projects = [
     {
