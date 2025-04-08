@@ -1,86 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/masterball.png"/>
+    <link rel="icon" href="/img/masterball.png"/>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bg.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/left_content.css">
-    <link rel="stylesheet" href="css/content_1.css">
-    <link rel="stylesheet" href="css/content_2.css">
-    <link rel="stylesheet" href="css/content_3.css">
-    <link rel="stylesheet" href="css/content_4.css">
-    <link rel="stylesheet" href="css/content_5.css">
-    <link rel="stylesheet" href="css/right_content.css">
-    <link rel="stylesheet" href="css/check_details.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/custom_type.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loris Weier - Portfolio - Pokémon</title>
-</head>
-<body>
-
-    <main>
-
-        <div class="bg red_bg"></div>
-        <div class="bg dark_red_bg"></div>
-        <img class="bg pokeball_bg" src="img/pokeball.png">
-
-        <div class="left_content">
-            <nav id="nav">
-                <img id="nav_left" class="arrow" src="img/caret-left.png">
-                <img class="nav_active" src="img/icons/nav-icon1-black.png">
-                <img src="img/icons/nav-icon2-white.png">
-                <img src="img/icons/nav-icon3-white.png">
-                <img src="img/icons/nav-icon4-white.png">
-                <img src="img/icons/nav-icon5-white.png">
-                <img id="nav_right" class="arrow" src="img/caret-right.png">
-            </nav>
-            <div id="content" class="content">
-
-            </div>
-        </div>
-        
-        <div class="right_content">
-            <div class="info_band">
-                <img class="pokeball" src="img/masterball.png">
-                <p>Loris</p>
-                <p id="age"></p>
-                <img class="gender" src="img/male-gender.png">
-            </div>
-            <model-viewer src="modele_3D/loris.glb" camera-orbit="25deg auto auto" autoplay></model-viewer>
-        </div>
-
-    </main>
-
-    <div id="check_details" class="check_details hidden">
-        <div>
-            <span>A</span>
-            Voir les détails
-        </div>
-    </div>
-
-    <footer>
-        <p>Weier Loris - 2024</p>
-
-        <div>
-            <img id="control_down" class="control hidden" src="img/arrows/arrow-down.png">
-            <img id="control_top" class="control hidden" src="img/arrows/arrow-top.png">
-            <img id="control_left" class="control" src="img/arrows/arrow-left.png">
-            <img id="control_right" class="control" src="img/arrows/arrow-right.png">
-            Contrôles
-        </div>
-
-        <div id="control_b" class="hidden">
-            <span class="control">B</span>
-            Retour
-        </div>
-    </footer>
-
-    <script type="module" src="js/main.js"></script>
-
-</body>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
